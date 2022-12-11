@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <form>
+         <p>
+                <label>Bình Phương của :</label>
+                <input  type="number" placeholder="Nhập số vào đây"
+                       oninput="convert(this.value)"
+                       onchange="convert(this.value)">
+         </p>
+         <p> Kết quả : <span id="output"></span></p>
+    </form>
+    <script>
+          function convert(a) {
+                 a = parseFloat(a);
+                document.getElementById("output").innerHTML = a*a;
+          }
+    </script>
+</body>
+</html>

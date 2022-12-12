@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+        <script>
+            let a =[]
+            for (let i = 0; i < 5; i++) {
+                a[i] = prompt('Nhập vào mảng bất kì  :');
+            }
+            let b= prompt("Kí tự muốn kiểm tra : ");
+               function searchCharacters(a,b) {
+                   let count = 0
+                   let index = a.indexOf(b)
+                   if (index < 0){
+                      document.write("-1");
+                      }else {
+                           for (let i = 0; i < a.length; i++) {
+                        if (a[i] === b) {
+                            count++ ;
+                           }
+                        }
+                     document.write(count);
+                  }
+               }
+            searchCharacters(a,b)
+        </script>
+</body>
+</html>

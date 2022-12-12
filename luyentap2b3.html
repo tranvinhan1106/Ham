@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+        function factorialCalculation(number) {
+            let count = 1
+            for (let i = 1; i <= number ; i++) {
+                count *= i ;
+            }
+            document.write(count);
+        }
+        let number = +prompt("Nhập số vào đây :" );
+        factorialCalculation(number);
+    </script>
+</body>
+</html>

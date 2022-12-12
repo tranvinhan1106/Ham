@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+            <script>
+            let a = +prompt("Nhập vào số bất kì thứ nhát : ");
+            let b = +prompt("Nhập vào số bất kì thứ hai :");
+            document.write("Trước khi đổi chỗ là :" + a + " và " + b);
+            function changePlaces(a,b) {
+                let count = 0 ;
+                count = a
+                a = b;
+                b = count
+                document.write("<br>" + "<br>" + "Sau khi đổi chỗ là :" + a + " và " + b);
+            }
+            changePlaces(a,b);
+        </script>
+</body>
+</html>
